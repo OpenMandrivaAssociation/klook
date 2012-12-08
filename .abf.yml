@@ -1,2 +1,5 @@
+removed_sources:
+  klook-1.1.tar.gz: 477eaaf452fe429b5b542ca7cbdd4c23358ba5a7
+  klook-2.0.tar.gz: 544694e38e8073506a5d76940a3898e9e5f504c2
 sources:
-  "klook-0.1.tar.gz:"	2a80fa19088593469b5d28bbf393ae1bf233a39a
+  klook-2.0.tar.gz: 97d950112075b45a0bbcfccd591074a486dd2075

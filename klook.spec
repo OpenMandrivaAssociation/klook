@@ -1,30 +1,36 @@
-Summary:	Klook is a quick preview feature
+#This is a spec file for Klook
+
+Summary:	Quick file preview
 Name:		klook
-Version:	0.1
-Release:	77
+Version:	2.0
+Release:	6
 License:	GPLv3
 Group:		Graphical desktop/KDE
-Source0:	%{name}-%{version}.tar.gz
-Patch0:		klook-0.1-link-against-libX11.patch
+Source:		%{name}-%{version}.tar.gz
+Requires: 	okular
+Requires: 	okular-ooo
+Requires: 	okular-chm
+Requires: 	okular-pdf
+Requires:	okular-fb
+Requires:	gstreamer0.10-decoders
+Requires:	gstreamer0.10-vp8
 BuildRequires:	qt4-devel	>= 4.7.0
 BuildRequires:	kdelibs4-devel	>= 4.6.5
 
 %description
-Klook is a quick preview feature based on Qt and Qt Quick, allows users to look
-at the contents of a file in the Dolphin
+Klook is a quick preview feature based on Qt and Qt Quick
 
 %prep
 %setup -q
-%patch0 -p1 -b .libX11~
 
 %build
 %cmake_kde4
 
 %install
 %makeinstall_std -C build
-%find_lang KLook
 
-%files -f KLook.lang
-%{_bindir}/%{name}
-%{_iconsdir}/hicolor/*/apps/%{name}.*
-%{_datadir}/%{name}
+%files
+%_kde_appsdir/klook/*
+%_kde_iconsdir/hicolor/*
+%_kde_bindir/klook
+%_kde_datadir/locale
