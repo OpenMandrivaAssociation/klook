@@ -6,16 +6,16 @@ Version:	2.0
 Release:	6
 License:	GPLv3
 Group:		Graphical desktop/KDE
-Source:		%{name}-%{version}.tar.gz
-Requires: 	okular
-Requires: 	okular-ooo
-Requires: 	okular-chm
-Requires: 	okular-pdf
+Source0:	%{name}-%{version}.tar.gz
+BuildRequires:	qt4-devel	>= 4.7.0
+BuildRequires:	kdelibs4-devel	>= 4.6.5
+Requires:	okular
+Requires:	okular-ooo
+Requires:	okular-chm
+Requires:	okular-pdf
 Requires:	okular-fb
 Requires:	gstreamer0.10-decoders
 Requires:	gstreamer0.10-vp8
-BuildRequires:	qt4-devel	>= 4.7.0
-BuildRequires:	kdelibs4-devel	>= 4.6.5
 
 %description
 Klook is a quick preview feature based on Qt and Qt Quick
@@ -30,7 +30,8 @@ Klook is a quick preview feature based on Qt and Qt Quick
 %makeinstall_std -C build
 
 %files
-%_kde_appsdir/klook/*
-%_kde_iconsdir/hicolor/*
-%_kde_bindir/klook
-%_kde_datadir/locale
+%{_kde_appsdir}/klook/*
+%{_kde_iconsdir}/hicolor/*
+%{_kde_bindir}/klook
+%{_kde_datadir}/locale
+
