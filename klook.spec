@@ -3,7 +3,7 @@
 Summary:	Quick file preview
 Name:		klook
 Version:	2.0
-Release:	6
+Release:	7
 License:	GPLv3
 Group:		Graphical desktop/KDE
 Source0:	%{name}-%{version}.tar.gz
