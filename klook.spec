@@ -9,6 +9,7 @@ Group:		Graphical desktop/KDE
 Source0:	%{name}-%{version}.tar.gz
 BuildRequires:	qt4-devel	>= 4.7.0
 BuildRequires:	kdelibs4-devel	>= 4.6.5
+BuildRequires:	pkgconfig(exiv2)
 Requires:	okular
 Requires:	okular-ooo
 Requires:	okular-chm
