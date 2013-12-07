@@ -1,7 +1,7 @@
 Summary:	Quick file preview
 Name:		klook
 Version:	2.0
-Release:	12
+Release:	13
 License:	GPLv3
 Group:		Graphical desktop/KDE
 Url:		https://abf.rosalinux.ru/uxteam/KLook
