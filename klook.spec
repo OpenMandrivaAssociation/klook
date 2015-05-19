@@ -1,7 +1,7 @@
 Summary:	Quick file preview
 Name:		klook
 Version:	2.0
-Release:	20
+Release:	21
 License:	GPLv3
 Group:		Graphical desktop/KDE
 Url:		https://abf.rosalinux.ru/uxteam/KLook
@@ -15,8 +15,6 @@ Requires: 	okular-ooo
 Requires: 	okular-chm
 Requires: 	okular-pdf
 Requires:	okular-fb
-Requires:	gstreamer0.10-decoders
-Requires:	gstreamer0.10-vp8
 
 %description
 Klook is a quick preview feature based on Qt and Qt Quick.
